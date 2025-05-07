@@ -50,7 +50,7 @@
 ![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
 ![Tailscale](https://img.shields.io/badge/tailscale-%2354514d.svg?style=for-the-badge&logo=Tailscale&logoColor=white)
 
-## 👁️ SOC & Security Tools
+### 👁️ SOC & Security Tools
 
 [![Darktrace](https://img.shields.io/badge/darktrace-%23EA5B1D.svg?style=for-the-badge&logo=darktrace&logoColor=white)](https://www.darktrace.com/)
 [![Netskope](https://img.shields.io/badge/netskope-%2353565a.svg?style=for-the-badge&logo=netskope&logoColor=white)](https://www.netskope.com/)
@@ -68,7 +68,7 @@ I've built a personal [homelab](https://github.com/Kyrd0x/mini-rack) that runs:
 
 ![Homelab](images/mini-rack.png)
 
-## 📊 GitHub Stats:
+## 📊 GitHub Stats
 ![](https://github-readme-stats.vercel.app/api?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=Kyrd0x&theme=shadow_blue&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true&layout=compact)\
