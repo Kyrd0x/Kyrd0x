@@ -1,7 +1,8 @@
 # 🔧 mov eax, 'Hi' ; call Kyrd0x
 
 🎓 I'm a French cybersecurity student, currently finishing my engineering degree.  
-💼 I work in a SOC where I handle both *blue team* and *red team* tasks.
+💼 I work in a SOC where I handle both *blue team* and *red team* tasks.  
+📬 Feel free to reach out: `contact@kyrd0x.net`
 
 ---
 
@@ -68,8 +69,9 @@ I've built a personal [homelab](https://github.com/Kyrd0x/mini-rack) that runs:
 
 ![Homelab](images/mini-rack.png)
 
-## 📊 GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Kyrd0x&theme=shadow_blue&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true&layout=compact)\
-*slightly biased*
+---
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Kyrd0x&theme=shadow_blue&hide_border=true&include_all_commits=true&count_private=true" width="70%" />
+  <img src="https://nirzak-streak-stats.vercel.app/?user=Kyrd0x&theme=shadow_blue&hide_border=true" width="70%" />
+</p>
