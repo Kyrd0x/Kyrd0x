@@ -15,14 +15,14 @@
 ## 🎯 Scores & Challenges
 
 ### 🏁 CTFs
-- **Apr. 2025**   **2ᵉ / 47**  Mars@Hack – Team - ![FR](images/fr.png)
-- **Dec. 2024**  **6ᵉ / 337**  4T$ CTF – Team - ![CH](images/ch.png)
-- **Oct. 2024**  **12ᵉ / 260**  StarHack CTF – Individual - ![FR](images/fr.png)
-- **Apr. 2024**  **10ᵉ / 150**  Telia Cyber Bootcamp CTF ‑ Individual - ![EE](images/ee.png)
+- **Apr. 2025**   **2ᵉ / 47**  Mars@Hack - Team - ![FR](images/fr.png)
+- **Dec. 2024**  **6ᵉ / 337**  4T$ CTF - Team - ![CH](images/ch.png)
+- **Oct. 2024**  **12ᵉ / 260**  StarHack CTF - Individual - ![FR](images/fr.png)
+- **Apr. 2024**  **10ᵉ / 150**  Telia Cyber Bootcamp CTF - Individual - ![EE](images/ee.png)
 
 ### 🌐 Plateforms
 
-- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) – 2900pts, **top 1%**
+- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 2900pts - **top 1%**
  
 ---
 
@@ -71,4 +71,5 @@ I've built a personal [homelab](https://github.com/Kyrd0x/mini-rack) that runs:
 ## 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=Kyrd0x&theme=shadow_blue&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true&layout=compact)\
+*slightly biased*
