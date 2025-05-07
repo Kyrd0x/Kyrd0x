@@ -2,7 +2,7 @@
 
 🎓 I'm a French cybersecurity student, currently finishing my engineering degree.  
 💼 I work in a SOC where I handle both *blue team* and *red team* tasks.  
-📬 Feel free to reach out: `contact@kyrd0x.net`
+📬 You can reach me at `contact@kyrd0x.net`
 
 ---
 
