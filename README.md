@@ -1,1 +1,74 @@
+# 🔧 mov eax, 'Hi' ; call Kyrd0x
 
+🎓 I'm a French cybersecurity student, currently finishing my engineering degree.  
+💼 I work in a SOC where I handle both *blue team* and *red team* tasks.
+
+---
+
+## 🧠 What I do
+
+- 🔐 **Purple Teaming** in an operational environment  
+- 🛠️ **Malware development** for research and offensive simulation  
+- 🧱 **Building secure infrastructures**, often automated
+
+
+## 🎯 Scores & Challenges
+
+### 🏁 CTFs
+- **Apr. 2025**   **2ᵉ / 47**  Mars@Hack – Team - ![FR](images/fr.png)
+- **Dec. 2024**  **6ᵉ / 337**  4T$ CTF – Team - ![CH](images/ch.png)
+- **Oct. 2024**  **12ᵉ / 260**  StarHack CTF – Individual - ![FR](images/fr.png)
+- **Apr. 2024**  **10ᵉ / 150**  Telia Cyber Bootcamp CTF ‑ Individual - ![EE](images/ee.png)
+
+### 🌐 Plateforms
+
+- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) – 2900pts, **top 1%**
+ 
+---
+
+## 🖥️ Tech Stack
+
+### 🔤 Languages
+
+![ASM](https://img.shields.io/badge/asm-%236E4C13.svg?style=for-the-badge&logoColor=white)
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Rust](https://img.shields.io/badge/rust-%23DEA584.svg?style=for-the-badge&logo=rust&logoColor=white)
+![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnubash&logoColor=white)
+
+### 🛠️ Reversing & Debugging
+
+![GDB](https://img.shields.io/badge/gdb-%23E34F26.svg?style=for-the-badge&logoColor=white)
+![Ghidra](https://img.shields.io/badge/ghidra-%23B8860B.svg?style=for-the-badge&logoColor=white)
+![x64dgb](https://img.shields.io/badge/x64dgb-%23000000.svg?style=for-the-badge&logoColor=white)
+![objdump](https://img.shields.io/badge/objdump-%234682B4.svg?style=for-the-badge&logoColor=white)
+
+### 🧱 Infrastructure & Automation
+
+![Proxmox](https://img.shields.io/badge/proxmox-%23E57000.svg?style=for-the-badge&logo=proxmox&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
+![Tailscale](https://img.shields.io/badge/tailscale-%2354514d.svg?style=for-the-badge&logo=Tailscale&logoColor=white)
+
+## 👁️ SOC & Security Tools
+
+[![Darktrace](https://img.shields.io/badge/darktrace-%23EA5B1D.svg?style=for-the-badge&logo=darktrace&logoColor=white)](https://www.darktrace.com/)
+[![Netskope](https://img.shields.io/badge/netskope-%2353565a.svg?style=for-the-badge&logo=netskope&logoColor=white)](https://www.netskope.com/)
+[![Tehtris](https://img.shields.io/badge/tehtris-%230f2964.svg?style=for-the-badge&logoColor=white)](https://www.tehtris.com/)
+[![Microsoft Entra](https://img.shields.io/badge/microsoft%20entra-%2375e7fc.svg?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.microsoft.com/fr-fr/security/business/microsoft-entra)
+
+## 🧪 My Homelab
+
+I've built a personal [homelab](https://github.com/Kyrd0x/mini-rack) that runs:
+
+- 🌐 **OPNsense** with **Tailscale**
+- 🖥️ A **Proxmox cluster** hosting VMs, labs, AD, and more
+- 📦 **Synology** for storage *(soon to be replaced by TrueNAS)*
+- 🗄️ All neatly packed in a compact **10” rack**
+
+![Homelab](images/mini-rack.png)
+
+## 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=Kyrd0x&theme=shadow_blue&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Kyrd0x&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
