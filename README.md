@@ -15,10 +15,10 @@
 ## 🎯 Scores & Challenges
 
 ### 🏁 CTFs
-- **Apr. 2025**   **2ᵉ / 47**  Mars@Hack - Team - ![FR](images/fr.png)
-- **Dec. 2024**  **6ᵉ / 337**  4T$ CTF - Team - ![CH](images/ch.png)
-- **Oct. 2024**  **12ᵉ / 260**  StarHack CTF - Individual - ![FR](images/fr.png)
-- **Apr. 2024**  **10ᵉ / 150**  Telia Cyber Bootcamp CTF - Individual - ![EE](images/ee.png)
+- **Apr. 2025** **2ᵉ / 47** Mars@Hack - Team - ![FR](images/fr.png)  
+- **Dec. 2024** **6ᵉ / 337** 4T$ CTF - Team - ![CH](images/ch.png)  
+- **Oct. 2024** **12ᵉ / 260** StarHack CTF - Individual - ![FR](images/fr.png)  
+- **Apr. 2024** **10ᵉ / 150** Telia Cyber Bootcamp - Individual - ![EE](images/ee.png)
 
 ### 🌐 Plateforms
 
