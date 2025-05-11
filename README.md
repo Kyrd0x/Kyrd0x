@@ -12,7 +12,6 @@
 - 🛠️ **Malware development** for research and offensive simulation  
 - 🧱 **Building secure infrastructures**, often automated
 
-
 ## 🎯 Scores & Challenges
 
 ### 🏁 CTFs
@@ -63,7 +62,7 @@
 I've built a personal [homelab](https://github.com/Kyrd0x/mini-rack) that runs:
 
 - 🌐 **OPNsense** with **Tailscale**
-- 🖥️ A **Proxmox cluster** hosting VMs, labs, AD, and more
+- 🖥️ A **Proxmox cluster** hosting VMs, labs, AD, Sandboxes and more
 - 📦 **Synology** for storage *(soon to be replaced by TrueNAS)*
 - 🗄️ All neatly packed in a compact **10” rack**
 
