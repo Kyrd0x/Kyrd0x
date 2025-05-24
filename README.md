@@ -4,13 +4,19 @@
 💼 I work in a SOC where I handle both *blue team* and *red team* tasks.  
 📬 You can reach me at `contact@kyrd0x.net`
 
----
-
 ## 🧠 What I do
 
 - 🔐 **Purple Teaming** in an operational environment  
 - 🛠️ **Malware development** for research and offensive simulation  
 - 🧱 **Building secure infrastructures**, often automated
+
+---
+
+## 🚧 Ongoing Projects
+
+- 🐛 [**Furdz - FUD Malware**](https://github.com/Kyrd0x/furdz) – C-based DLL injection malware evading AVs, with sandbox checks, and VT stealth
+- 🧱 [**Homelab**](https://github.com/Kyrd0x/mini-rack) – Custom homelab rack with Proxmox cluster, OPNsense, sandboxes and so, running on compact hardware
+- 🧩 [**CY CTF**](https://github.com/Kyrd0x/) – Deployable CTF platform for CY Tech using CTFd, Docker, Cloudflare & Tailscale, with automation tooling
 
 ## 🎯 Scores & Challenges
 
@@ -22,7 +28,7 @@
 
 ### 🌐 Plateforms
 
-- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 3200pts - **top 1%**
+- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 3800pts - **top 1%**
  
 ---
 
@@ -33,8 +39,8 @@
 ![ASM](https://img.shields.io/badge/asm-%236E4C13.svg?style=for-the-badge&logoColor=white)
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Rust](https://img.shields.io/badge/rust-%23DEA584.svg?style=for-the-badge&logo=rust&logoColor=white)
 ![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnubash&logoColor=white)
+<!-- ![Rust](https://img.shields.io/badge/rust-%23DEA584.svg?style=for-the-badge&logo=rust&logoColor=white) not yet -->
 
 ### 🛠️ Reversing & Debugging
 
