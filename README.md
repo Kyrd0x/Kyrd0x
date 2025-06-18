@@ -8,7 +8,7 @@
 
 - 🔐 **Purple Teaming** in an operational environment  
 - 🛠️ **Malware development** for research and offensive simulation  
-- 🧱 **Building secure infrastructures**, often automated
+- 🧱 **Designing automated workflows** for infrastructure and operational tasks
 
 ---
 
@@ -16,7 +16,6 @@
 
 - 🐛 [**Furdz - FUD Malware**](https://github.com/Kyrd0x/furdz) – C-based DLL injection malware evading AVs, with sandbox checks, and VT stealth
 - 🧱 [**Homelab**](https://github.com/Kyrd0x/mini-rack) – Custom homelab rack with Proxmox cluster, OPNsense, sandboxes and so, running on compact hardware
-- 🧩 [**CY CTF**](https://github.com/Kyrd0x/) – Deployable CTF platform for CY Tech using CTFd, Docker, Cloudflare & Tailscale, with automation tooling
 
 ## 🎯 Scores & Challenges
 
@@ -28,7 +27,7 @@
 
 ### 🌐 Plateforms
 
-- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 3800pts - **top 1%**
+- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 4000pts - **top 1%**
  
 ---
 
