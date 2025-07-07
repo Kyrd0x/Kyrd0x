@@ -1,0 +1,32 @@
+name: Daily Score Check
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  score-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get current score
+        run: |
+          score=$(curl -s "https://www.root-me.org/Kyrd0x" | grep -oP '<a href="Kyrd0x\?inc=score&amp;lang=fr"[^>]*>\K[0-9]+')
+          echo "SCORE=$score" >> $GITHUB_ENV
+
+      - name: Update README.md
+        run: |
+          sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts|\1${SCORE}pts|" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update Root-Me score to ${SCORE}" || echo "No changes to commit"
+          git push
+        env:
+          SCORE: ${{ env.SCORE }}
