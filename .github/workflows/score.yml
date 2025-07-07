@@ -16,7 +16,7 @@ jobs:
         run: |
           page=$(curl -s "https://www.root-me.org/Kyrd0x")
           score=$(echo "$page" | grep -oP '<a href="Kyrd0x\?inc=score&amp;lang=fr"[^>]*>\K[0-9]+')
-          rank=$(echo "$page" | grep -oP '<td class="gras"># \K[0-9]+')
+          rank=$(echo "$page" | grep -oP '<td class="gras"># \K[0-9]+' | tr -d '\r\n' | xargs)
 
           echo "SCORE=$score" >> $GITHUB_ENV
           echo "RANK=$rank" >> $GITHUB_ENV
