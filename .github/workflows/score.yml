@@ -1,4 +1,4 @@
-name: Daily Score Check
+name: Daily Score Update
 
 on:
   schedule:
@@ -30,7 +30,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "[auto] updated Root-Me score to ${SCORE}" || exit 0
+          git commit -m "[auto] updated Root-Me score to ${SCORE} & rank to #${RANK}" || exit 0
           git push
         env:
           SCORE: ${{ env.SCORE }}
