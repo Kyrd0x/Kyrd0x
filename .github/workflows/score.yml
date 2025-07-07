@@ -12,14 +12,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Get current score
+      - name: Get current score & rank
         run: |
-          score=$(curl -s "https://www.root-me.org/Kyrd0x" | grep -oP '<a href="Kyrd0x\?inc=score&amp;lang=fr"[^>]*>\K[0-9]+')
+          page=$(curl -s "https://www.root-me.org/Kyrd0x")
+          score=$(echo "$page" | grep -oP '<a href="Kyrd0x\?inc=score&amp;lang=fr"[^>]*>\K[0-9]+')
+          rank=$(echo "$page" | grep -oP '<td class="gras"># \K[0-9]+')
+
           echo "SCORE=$score" >> $GITHUB_ENV
+          echo "RANK=$rank" >> $GITHUB_ENV
 
       - name: Update README.md
         run: |
-          sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts|\1${SCORE}pts|" README.md
+          sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) — 🧠 \*\*\)[0-9]\+ pts\*\* | 🏆 \*\*Rank #[0-9]\+\*\*|\1${SCORE} pts** | 🏆 **Rank #${RANK}**|" README.md
 
       - name: Commit and push changes
         run: |
