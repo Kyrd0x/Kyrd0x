@@ -27,7 +27,7 @@
 
 ### 🌐 Plateforms
 
-- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 4000pts - **top 1%**
+- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 4120pts - **top 1%**
  
 ---
 
