@@ -23,7 +23,7 @@ jobs:
 
       - name: Update README.md
         run: |
-          sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) — 🧠 \*\*\)[0-9]\+ pts\*\* | 🏆 \*\*Rank #[0-9]\+\*\*|\1${SCORE} pts** | 🏆 **Rank #${RANK}**|" README.md
+           sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts - Rank #[0-9]\+|\1${SCORE}pts - Rank #${RANK}|" README.md
 
       - name: Commit and push changes
         run: |
