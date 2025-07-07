@@ -26,7 +26,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Update Root-Me score to ${SCORE}" || echo "No changes to commit"
+          git commit -m "[auto] updated Root-Me score to ${SCORE}" || exit 0
           git push
         env:
           SCORE: ${{ env.SCORE }}
