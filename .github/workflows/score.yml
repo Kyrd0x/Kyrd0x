@@ -2,50 +2,46 @@ name: Daily Score Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # runs every day at midnight UTC
+    - cron: '0 0 * * *' # every day at midnight UTC
   workflow_dispatch:
 
 jobs:
   score-check:
     runs-on: ubuntu-latest
+    env:
+      ROOTME_COOKIE: ${{ secrets.ROOTME_COOKIE }}  # Define your GitHub secret!
+      ROOTME_USER_ID: "12345"  # Replace with your Root-Me user ID
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Get current score & rank
+      - name: Get current score & rank from Root-Me API
         id: fetch_score
         continue-on-error: true
         run: |
-          page=$(curl -s -f "https://www.root-me.org/Kyrd0x") || {
-            echo "::warning::Failed to fetch Root-Me page. Skipping update."
-            echo "SCORE=NA" >> $GITHUB_ENV
-            echo "RANK=NA" >> $GITHUB_ENV
-            echo "skip=true" >> $GITHUB_OUTPUT
-            exit 0
-          }
+          COOKIE="spip_session=${API_KEY}"
+          response=$(curl -s -H "Cookie: $COOKIE" "https://api.www.root-me.org/auteurs/${USER_ID}")
 
-          score=$(echo "$page" | grep -oP '<a href="Kyrd0x\?inc=score&amp;lang=fr"[^>]*>\K[0-9]+')
-          rank=$(echo "$page" | grep -oP '&nbsp;\K[0-9]+' | head -n1 | tr -d '\r\n' | xargs)
-
-          if [[ -z "$score" || -z "$rank" ]]; then
-            echo "::warning::Failed to parse score or rank. Skipping update."
+          if [[ $? -ne 0 || -z "$response" ]]; then
+            echo "::warning::Failed to fetch API data. Skipping update."
             echo "SCORE=NA" >> $GITHUB_ENV
             echo "RANK=NA" >> $GITHUB_ENV
             echo "skip=true" >> $GITHUB_OUTPUT
             exit 0
           fi
 
+          score=$(echo "$response" | jq -r '.score')
+          rank=$(echo "$response" | jq -r '.position')
+
           echo "SCORE=$score" >> $GITHUB_ENV
           echo "RANK=$rank" >> $GITHUB_ENV
-          echo "skip=false" >> $GITHUB_OUTPUT
 
       - name: Update README.md
-        if: steps.fetch_score.outputs.skip != 'true'
         run: |
           sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts - Rank #[0-9]\+|\1${SCORE}pts - Rank #${RANK}|" README.md
 
       - name: Commit and push changes
-        if: steps.fetch_score.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
