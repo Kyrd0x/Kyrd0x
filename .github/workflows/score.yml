@@ -17,13 +17,27 @@ jobs:
         id: fetch_score
         continue-on-error: true
         run: |
-          response=$(curl -s -b "api_key=$API_KEY" "https://api.www.root-me.org/auteurs/$USER_ID")
+          response=$(curl -s -b "api_key=${secrets.API_KEY}" "https://api.www.root-me.org/auteurs/${secrets.USER_ID}")
 
           score=$(echo "$response" | jq -r '.score')
           rank=$(echo "$response" | jq -r '.position')
 
           echo "SCORE=$score" >> $GITHUB_ENV
           echo "RANK=$rank" >> $GITHUB_ENV
+
+      - name: Check if score and rank are valid
+        run: |
+          if ! [[ "$SCORE" =~ ^[0-9]+$ ]] || [ "$SCORE" -lt 0 ] || [ "$SCORE" -gt 100000 ]; then
+            echo "Invalid score: $SCORE"
+            exit 1
+          fi
+          
+          if ! [[ "$RANK" =~ ^[0-9]+$ ]] || [ "$RANK" -lt 0 ] || [ "$RANK" -gt 100000 ]; then
+            echo "Invalid rank: $RANK"
+            exit 1
+          fi
+          
+          echo "Score and rank are valid: $SCORE pts, rank #$RANK"
 
       - name: Update README.md
         run: |
