@@ -17,16 +17,19 @@ jobs:
         id: fetch_score
         continue-on-error: true
         run: |
-          response=$(curl -s -b "api_key=${secrets.API_KEY}" "https://api.www.root-me.org/auteurs/${secrets.USER_ID}")
+          response=$(curl -s -b "api_key=${{ secrets.API_KEY }}" "https://api.www.root-me.org/auteurs/${{ secrets.USER_ID }}")
 
           score=$(echo "$response" | jq -r '.score')
           rank=$(echo "$response" | jq -r '.position')
 
-          echo "SCORE=$score" >> $GITHUB_ENV
-          echo "RANK=$rank" >> $GITHUB_ENV
+          echo "score=$score" >> $GITHUB_OUTPUT
+          echo "rank=$rank" >> $GITHUB_OUTPUT
 
       - name: Check if score and rank are valid
         run: |
+          SCORE="${{ steps.fetch_score.outputs.score }}"
+          RANK="${{ steps.fetch_score.outputs.rank }}"
+
           if ! [[ "$SCORE" =~ ^[0-9]+$ ]] || [ "$SCORE" -lt 0 ] || [ "$SCORE" -gt 100000 ]; then
             echo "Invalid score: $SCORE"
             exit 1
@@ -41,14 +44,12 @@ jobs:
 
       - name: Update README.md
         run: |
-          sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts - Rank #[0-9]\+|\1${SCORE}pts - Rank #${RANK}|" README.md
+          sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts - Rank #[0-9]\+|\1${{ steps.fetch_score.outputs.score }}pts - Rank #${{ steps.fetch_score.outputs.rank }}|" README.md
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "[auto] updated Root-Me score to ${SCORE} & rank to #${RANK}" || exit 0
+          git commit -m "[auto] updated Root-Me score to ${{ steps.fetch_score.outputs.score }} & rank to #${{ steps.fetch_score.outputs.rank }}" || exit 0
           git push
-        env:
-          SCORE: ${{ env.SCORE }}
