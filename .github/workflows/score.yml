@@ -14,9 +14,18 @@ jobs:
 
       - name: Get current score & rank
         run: |
-          page=$(curl -s "https://www.root-me.org/Kyrd0x")
+          page=$(curl -s -f "https://www.root-me.org/Kyrd0x") || {
+            echo "Failed to fetch page. Exiting workflow."
+            exit 1
+          }
+
           score=$(echo "$page" | grep -oP '<a href="Kyrd0x\?inc=score&amp;lang=fr"[^>]*>\K[0-9]+')
           rank=$(echo "$page" | grep -oP '&nbsp;\K[0-9]+' | head -n1 | tr -d '\r\n' | xargs)
+
+          if [[ -z "$score" || -z "$rank" ]]; then
+            echo "Failed to extract score or rank. Exiting workflow."
+            exit 1
+          fi
 
           echo "SCORE=$score" >> $GITHUB_ENV
           echo "RANK=$rank" >> $GITHUB_ENV
