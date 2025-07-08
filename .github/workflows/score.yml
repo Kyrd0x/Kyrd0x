@@ -2,7 +2,7 @@ name: Daily Score Update
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *' # runs every day at midnight UTC
   workflow_dispatch:
 
 jobs:
@@ -13,28 +13,39 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Get current score & rank
+        id: fetch_score
+        continue-on-error: true
         run: |
           page=$(curl -s -f "https://www.root-me.org/Kyrd0x") || {
-            echo "Failed to fetch page. Exiting workflow."
-            exit 1
+            echo "::warning::Failed to fetch Root-Me page. Skipping update."
+            echo "SCORE=NA" >> $GITHUB_ENV
+            echo "RANK=NA" >> $GITHUB_ENV
+            echo "skip=true" >> $GITHUB_OUTPUT
+            exit 0
           }
 
           score=$(echo "$page" | grep -oP '<a href="Kyrd0x\?inc=score&amp;lang=fr"[^>]*>\K[0-9]+')
           rank=$(echo "$page" | grep -oP '&nbsp;\K[0-9]+' | head -n1 | tr -d '\r\n' | xargs)
 
           if [[ -z "$score" || -z "$rank" ]]; then
-            echo "Failed to extract score or rank. Exiting workflow."
-            exit 1
+            echo "::warning::Failed to parse score or rank. Skipping update."
+            echo "SCORE=NA" >> $GITHUB_ENV
+            echo "RANK=NA" >> $GITHUB_ENV
+            echo "skip=true" >> $GITHUB_OUTPUT
+            exit 0
           fi
 
           echo "SCORE=$score" >> $GITHUB_ENV
           echo "RANK=$rank" >> $GITHUB_ENV
+          echo "skip=false" >> $GITHUB_OUTPUT
 
       - name: Update README.md
+        if: steps.fetch_score.outputs.skip != 'true'
         run: |
-           sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts - Rank #[0-9]\+|\1${SCORE}pts - Rank #${RANK}|" README.md
+          sed -i "s|\(\[Kyrd0x](https://www.root-me.org/Kyrd0x) - \)[0-9]\+pts - Rank #[0-9]\+|\1${SCORE}pts - Rank #${RANK}|" README.md
 
       - name: Commit and push changes
+        if: steps.fetch_score.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
