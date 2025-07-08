@@ -20,16 +20,7 @@ jobs:
         id: fetch_score
         continue-on-error: true
         run: |
-          COOKIE="spip_session=${API_KEY}"
-          response=$(curl -s -H "Cookie: $COOKIE" "https://api.www.root-me.org/auteurs/${USER_ID}")
-
-          if [[ $? -ne 0 || -z "$response" ]]; then
-            echo "::warning::Failed to fetch API data. Skipping update."
-            echo "SCORE=NA" >> $GITHUB_ENV
-            echo "RANK=NA" >> $GITHUB_ENV
-            echo "skip=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
+          response=$(curl -s -b "api_key=$API_KEY" "https://api.www.root-me.org/auteurs/$USER_ID")
 
           score=$(echo "$response" | jq -r '.score')
           rank=$(echo "$response" | jq -r '.position')
