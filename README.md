@@ -27,7 +27,7 @@
 
 ### 🌐 Plateforms
 
-- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - pts - Rank #
+- 💀 **Root-Me** : [Kyrd0x](https://www.root-me.org/Kyrd0x) - 10pts - Rank #10
 
 ---
 
