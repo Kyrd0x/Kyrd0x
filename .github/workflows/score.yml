@@ -8,9 +8,6 @@ on:
 jobs:
   score-check:
     runs-on: ubuntu-latest
-    env:
-      ROOTME_COOKIE: ${{ secrets.ROOTME_COOKIE }}  # Define your GitHub secret!
-      ROOTME_USER_ID: "12345"  # Replace with your Root-Me user ID
 
     steps:
       - name: Checkout repository
