@@ -15,7 +15,9 @@
 ## 🚧 Ongoing Projects
 
 - 🐛 [**Furdz - FUD Malware**](https://github.com/Kyrd0x/furdz) – C-based DLL injection malware evading AVs, with sandbox checks, and VT stealth
+- 📚 [**CAPEv2 Deployment Docs**](https://github.com/Kyrd0x/capev2-proxmox-setup) – Universal scripts, configurations, and guides for deploying CAPEv2 across various environments (Proxmox, ESXi, classic)
 - 🧱 [**Homelab**](https://github.com/Kyrd0x/mini-rack) – Custom homelab rack with Proxmox cluster, OPNsense, sandboxes and so, running on compact hardware
+
 
 ## 🎯 Scores & Challenges
 
