@@ -1,16 +1,7 @@
 # 🔧 mov eax, 'Hi' ; call Kyrd0x
 
-🎓 I'm a French cybersecurity student, currently finishing my engineering degree.  
-💼 I work in a SOC where I handle both blue team, red team, and infrastructure-related tasks.  
+💼 I'm a French Cybersecurity Engineer, working in a SOC.  
 📬 You can reach me at `contact@kyrd0x.net`
-
-## 🧠 What I do
-
-- 🔐 **Purple Teaming** in an operational environment  
-- 🛠️ **Malware development** for research and offensive simulation  
-- 🧱 **Designing automated workflows** for infrastructure and operational tasks
-
----
 
 ## 🚧 Ongoing Projects
 
