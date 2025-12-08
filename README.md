@@ -34,37 +34,6 @@
 
 ---
 
-## 🖥️ Tech Stack
-
-### 🔤 Languages
-
-![ASM](https://img.shields.io/badge/asm-%236E4C13.svg?style=for-the-badge&logoColor=white)
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnubash&logoColor=white)
-<!-- ![Rust](https://img.shields.io/badge/rust-%23DEA584.svg?style=for-the-badge&logo=rust&logoColor=white) not yet -->
-
-### 🛠️ Reversing & Debugging
-
-![GDB](https://img.shields.io/badge/gdb-%23E34F26.svg?style=for-the-badge&logoColor=white)
-![Ghidra](https://img.shields.io/badge/ghidra-%23B8860B.svg?style=for-the-badge&logoColor=white)
-![x64dgb](https://img.shields.io/badge/x64dgb-%23000000.svg?style=for-the-badge&logoColor=white)
-![objdump](https://img.shields.io/badge/objdump-%234682B4.svg?style=for-the-badge&logoColor=white)
-
-### 🧱 Infrastructure & Automation
-
-![Proxmox](https://img.shields.io/badge/proxmox-%23E57000.svg?style=for-the-badge&logo=proxmox&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
-![Tailscale](https://img.shields.io/badge/tailscale-%2354514d.svg?style=for-the-badge&logo=Tailscale&logoColor=white)
-
-### 👁️ SOC & Security Tools
-
-[![Darktrace](https://img.shields.io/badge/darktrace-%23EA5B1D.svg?style=for-the-badge&logo=darktrace&logoColor=white)](https://www.darktrace.com/)
-[![Netskope](https://img.shields.io/badge/netskope-%2353565a.svg?style=for-the-badge&logo=netskope&logoColor=white)](https://www.netskope.com/)
-[![Tehtris](https://img.shields.io/badge/tehtris-%230f2964.svg?style=for-the-badge&logoColor=white)](https://www.tehtris.com/)
-[![Microsoft Entra](https://img.shields.io/badge/microsoft%20entra-%2375e7fc.svg?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.microsoft.com/fr-fr/security/business/microsoft-entra)
-
 ## 🧪 My Homelab
 
 I've built a personal [homelab](https://github.com/Kyrd0x/mini-rack) that runs:
