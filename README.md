@@ -14,6 +14,8 @@
 ## 🎯 Scores & Challenges
 
 ### 🏁 CTFs
+
+- **Mar. 2026** **23ᵉ / 680** - BsidesSF CTF - 🇺🇸
 - **Apr. 2025** **2ᵉ / 47** Mars@Hack - Team - ![FR](images/fr.png)  
 - **Dec. 2024** **6ᵉ / 337** 4T$ CTF - Team - ![CH](images/ch.png)  
 - **Oct. 2024** **12ᵉ / 260** StarHack CTF - Individual - ![FR](images/fr.png)  
