@@ -8,7 +8,7 @@
 - 🐛 [**Furdz - FUD Malware**](https://github.com/Kyrd0x/furdz) – C-based DLL injection malware evading AVs, with sandbox checks, and VT stealth
 - 📚 [**CAPEv2 Deployment Docs**](https://github.com/Kyrd0x/capev2-proxmox-setup) – Universal scripts, configs, and guides for deploying CAPEv2 across environments such as Proxmox
 - 🧱 [**Homelab**](https://github.com/Kyrd0x/mini-rack) – Custom homelab rack with Proxmox cluster, OPNsense, sandboxes and so, running on compact hardware
-- ⛰️ [**PyrCTF**](https://github.com/pyr-ctf/PyrCTF-2025) – Set up and organized an annual local Capture The Flag competition for students
+- ⛰️ [**PYR-CTF**](https://www.pyr-ctf.fr/) – Set up and organized an annual local Capture The Flag competition for students
 - 🎯 [**PNPT Lab setup - using Ludus & Exegol**](https://github.com/Kyrd0x/pnpt-ludus-exegol-setup) – Deployment guide for a PNPT certification AD lab utilizing Ludus & Exegol
 
 ## 🎯 Scores & Challenges
